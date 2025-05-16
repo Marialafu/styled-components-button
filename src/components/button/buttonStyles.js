@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
+  border: none;
+  border-radius: 1rem;
   padding: 1rem;
-  border-radius: 0.375rem;
-  border: 0.25rem solid rgb(68, 196, 61);
-  font-weight: 900;
-  color: rgb(62, 182, 56);
 `;
 
-export { StyledButton };
+const StyledSquare = styled.div`
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: ${({ color }) => (color ? 'lightblue' : 'darkblue')};
+  margin-bottom: 0.625rem;
+  border-radius: 1rem;
+`;
+
+export { StyledButton, StyledSquare };
